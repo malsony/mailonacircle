@@ -10,7 +10,7 @@ service 'postfix' do
   action :nothing
 end
 
-%w{mod_ssl crypto-utils mariadb-server dovecot dovecot-mysql}.each do |pkg| 
+%w{mod_ssl crypto-utils mariadb-server dovecot dovecot-mysql policycoreutils-python}.each do |pkg| 
    package pkg do
      action :install
    end
